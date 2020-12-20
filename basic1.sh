@@ -2,9 +2,22 @@
 
 # To see available shells
 # cat /etc/shells
+# For Debugging
+# bash -x {{FILE_NAME}}
 
 #           ECHO COMMAND
 # echo "Hello World"
+
+#           VARIABLES
+# NAME=("John")
+# NUM1=31 #NO_SPACE
+# NUM2=5
+
+# var=3
+# readonly var        # var becomes CONSTANT
+# var = 50 # NOT ALLOWED
+# echo $var
+
 
 #           USER INPUT
 # echo "Enter your first name: "
@@ -23,7 +36,6 @@
 
 
 #           CONDITIONAL STATEMENTS
-# NAME=("John")
 # SIMPLE IF STATEMENT
 # if [ "$NAME" == "Brad" ]
 # then
@@ -50,8 +62,6 @@
 # fi
 
 #           COMPARISON
-# NUM1=31
-# NUM2=5
 # if [ "$NUM1" -gt "$NUM2" ]
 # then
 #   echo "$NUM1 is greater than $NUM2"
@@ -71,13 +81,13 @@
 
 
 #           FILE CONDITIONS
-FILE="test.txt"
-if [ -e "$FILE" ]
-then
-  echo "$FILE exists"
-else
-  echo "$FILE does NOT exist"
-fi
+# FILE="test.txt"
+# if [ -e "$FILE" ]
+# then
+#   echo "$FILE exists"
+# else
+#   echo "$FILE does NOT exist"
+# fi
 
 ########
 # -d file   True if the file is a directory
