@@ -53,3 +53,13 @@
 # touch "hello/world.txt"
 # echo "Hello World" >> "hello/world.txt"
 # echo "Created hello/world.txt"
+
+
+n=1
+while [ $n -le 3 ]
+do 
+    echo $n
+    (( n++ ))
+    # gnome-terminal &
+    sleep 1
+done
