@@ -49,12 +49,14 @@ epoch_to_datetime() {
 
     if date -d "@0" >/dev/null 2>&1; then
         # Linux
-        TZ="$tz" date -d "@$epoch" "+%d-%m-%Y %I:%M:%S:%p"
+        TZ="$tz" date -d "@$epoch" "+%d-%m-%Y %I:%M:%S:%p" | log_success
     else
         # macOS
-        TZ="$tz" date -r "$epoch" "+%d-%m-%Y %I:%M:%S:%p"
+        TZ="$tz" date -r "$epoch" "+%d-%m-%Y %I:%M:%S:%p" | log_success
     fi
 }
+
+source ./lib/helper_function.sh
 
 epoch_to_datetime $1
 
